@@ -1,0 +1,22 @@
+{
+  "entry_id": "20231130_carolprotocol",
+  "bucket": "A_classics",
+  "variant": "orig",
+  "vuln_class": "reentrancy",
+  "severity": "high",
+  "chain": "ethereum",
+  "language": "solidity",
+  "fork_block": null,
+  "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2023-11/CAROLProtocol_exp.sol",
+  "incident_date": "2023-11-30",
+  "training_cutoff_label": {},
+  "patch_status": "pre_patch",
+  "design_tradeoff_notes": "",
+  "mutation_seed": null,
+  "mutation_methods": [],
+  "canary": "998ac464-2698-44bf-a1d2-795bbbc7b3a9",
+  "_import": {
+    "project": "CAROLProtocol",
+    "defihacklabs_test_path": "src/test/2023-11/CAROLProtocol_exp.sol"
+  }
+}

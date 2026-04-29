@@ -1,0 +1,22 @@
+{
+  "entry_id": "20231228_ccv",
+  "bucket": "A_classics",
+  "variant": "orig",
+  "vuln_class": "integer_precision",
+  "severity": "high",
+  "chain": "ethereum",
+  "language": "solidity",
+  "fork_block": null,
+  "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2023-12/CCV_exp.sol",
+  "incident_date": "2023-12-28",
+  "training_cutoff_label": {},
+  "patch_status": "pre_patch",
+  "design_tradeoff_notes": "",
+  "mutation_seed": null,
+  "mutation_methods": [],
+  "canary": "998ac464-2698-44bf-a1d2-795bbbc7b3a9",
+  "_import": {
+    "project": "CCV",
+    "defihacklabs_test_path": "src/test/2023-12/CCV_exp.sol"
+  }
+}

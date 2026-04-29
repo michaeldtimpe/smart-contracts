@@ -1,0 +1,22 @@
+{
+  "entry_id": "20231112_mev_0xa247",
+  "bucket": "A_classics",
+  "variant": "orig",
+  "vuln_class": "access_control",
+  "severity": "high",
+  "chain": "ethereum",
+  "language": "solidity",
+  "fork_block": 18552866,
+  "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2023-11/MEV_0xa247_exp.sol",
+  "incident_date": "2023-11-12",
+  "training_cutoff_label": {},
+  "patch_status": "pre_patch",
+  "design_tradeoff_notes": "",
+  "mutation_seed": null,
+  "mutation_methods": [],
+  "canary": "998ac464-2698-44bf-a1d2-795bbbc7b3a9",
+  "_import": {
+    "project": "MEV_0xa247",
+    "defihacklabs_test_path": "src/test/2023-11/MEV_0xa247_exp.sol"
+  }
+}

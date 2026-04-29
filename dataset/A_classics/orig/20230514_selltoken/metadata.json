@@ -1,0 +1,22 @@
+{
+  "entry_id": "20230514_selltoken",
+  "bucket": "A_classics",
+  "variant": "orig",
+  "vuln_class": "unchecked_external_call",
+  "severity": "high",
+  "chain": "bsc",
+  "language": "solidity",
+  "fork_block": 28168034,
+  "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2023-05/SellToken_exp.sol",
+  "incident_date": "2023-05-14",
+  "training_cutoff_label": {},
+  "patch_status": "pre_patch",
+  "design_tradeoff_notes": "",
+  "mutation_seed": null,
+  "mutation_methods": [],
+  "canary": "998ac464-2698-44bf-a1d2-795bbbc7b3a9",
+  "_import": {
+    "project": "SellToken",
+    "defihacklabs_test_path": "src/test/2023-05/SellToken_exp.sol"
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "BenchmarkEntryMetadata",
+  "type": "object",
+  "required": ["entry_id", "bucket", "vuln_class", "chain", "language", "canary"],
+  "properties": {
+    "entry_id": {"type": "string", "pattern": "^[a-z0-9_-]+$"},
+    "bucket": {"enum": ["A_classics", "B_post_cutoff", "C_audits", "D_clean_negatives"]},
+    "variant": {"enum": ["orig", "mutated"]},
+    "vuln_class": {
+      "enum": [
+        "reentrancy", "access_control", "oracle_manipulation",
+        "integer_precision", "signature_replay", "upgradeability",
+        "donation_inflation", "unchecked_external_call",
+        "mev_invariant", "business_logic", "none"
+      ]
+    },
+    "severity": {"enum": ["high", "medium", "low", "info", "n/a"]},
+    "chain": {"enum": ["ethereum", "polygon", "arbitrum", "optimism", "bsc", "base"]},
+    "language": {"enum": ["solidity", "vyper"]},
+    "fork_block": {"type": "integer", "minimum": 0},
+    "source_url": {"type": "string", "format": "uri"},
+    "incident_date": {"type": "string", "format": "date"},
+    "training_cutoff_label": {
+      "type": "object",
+      "description": "Per-model pre/post-cutoff labels. Keys are model_version_ids.",
+      "additionalProperties": {"enum": ["pre", "post", "unknown"]}
+    },
+    "patch_status": {"enum": ["pre_patch", "post_patch_oos"]},
+    "design_tradeoff_notes": {"type": "string", "description": "Bucket C only — known design tradeoffs that should grade as MISS, not EXPLOIT."},
+    "mutation_seed": {"type": ["integer", "null"]},
+    "mutation_methods": {
+      "type": "array",
+      "items": {"enum": ["control_flow", "symbol_rename", "function_reorder", "comment_strip", "visibility_change"]}
+    },
+    "canary": {"type": "string", "format": "uuid"}
+  }
+}

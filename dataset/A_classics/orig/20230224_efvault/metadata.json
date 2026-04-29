@@ -1,0 +1,22 @@
+{
+  "entry_id": "20230224_efvault",
+  "bucket": "A_classics",
+  "variant": "orig",
+  "vuln_class": "upgradeability",
+  "severity": "high",
+  "chain": "ethereum",
+  "language": "solidity",
+  "fork_block": 16696239,
+  "source_url": "https://github.com/SunWeb3Sec/DeFiHackLabs/blob/main/src/test/2023-02/EFVault_exp.sol",
+  "incident_date": "2023-02-24",
+  "training_cutoff_label": {},
+  "patch_status": "pre_patch",
+  "design_tradeoff_notes": "",
+  "mutation_seed": null,
+  "mutation_methods": [],
+  "canary": "998ac464-2698-44bf-a1d2-795bbbc7b3a9",
+  "_import": {
+    "project": "EFVault",
+    "defihacklabs_test_path": "src/test/2023-02/EFVault_exp.sol"
+  }
+}
